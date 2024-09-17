@@ -1,4 +1,3 @@
-# radio_educadora_node.py
 import rclpy
 from rclpy.node import Node
 from example_interfaces.msg import String
@@ -13,7 +12,7 @@ class RadioEducadoraNode(Node):
         
         # Publisher para AM
         self.am_publisher = self.create_publisher(String, "educadora_am", 10)
-        self.create_timer(1.0, self.publish_am_message)
+        self.create_timer(0.25, self.publish_am_message)
 
     def publish_fm_message(self):
         msg = String()

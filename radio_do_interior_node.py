@@ -23,7 +23,6 @@ class RadioDoInteriorNode(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    # Instanciando dois nós para representar rádios do interior (exemplo)
     radio1 = RadioDoInteriorNode("radio_do_interior_1", "educadora_fm", "radio_do_interior_fm")
     radio2 = RadioDoInteriorNode("radio_do_interior_2", "educadora_am", "radio_do_interior_am")
 
