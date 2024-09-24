@@ -11,7 +11,6 @@ class BasicCalculator:
         rospy.spin()
 
     def handle_calculation(self, req):
-        # Parse a operação e operandos da requisição (simplificado)
         operation = req.operation
         operand1 = req.operand1
         operand2 = req.operand2
