@@ -1,6 +1,6 @@
 import rospy
 from std_msgs.msg import String
-from your_package.srv import CalcService, CalcServiceResponse
+from basic_calculator_package.srv import CalcService, CalcServiceResponse
 
 class BasicCalculator:
     def __init__(self):
