@@ -1,0 +1,69 @@
+Navegue até o workspace
+cd ~/my_py_pkg/src
+
+
+Crie o pacote basic_calculator_package
+
+catkin_create_pkg basic_calculator_package rospy std_msgs message_generation message_runtime
+
+Adicione o arquivo `.srv`
+cd ~/my_py_pkg/src/basic_calculator_package
+mkdir srv
+
+
+Dentro de srv, crie o arquivo de serviço CalcService.srv com:
+faz uploud do daqui se quiser
+
+float64 operand1
+float64 operand2
+string operation
+---
+float64 result
+string status
+
+Modifique o `CMakeLists.txt`
+
+1. Adicione a linha que habilita a geração de mensagens customizadas:
+
+```cmake
+find_package(catkin REQUIRED COMPONENTS
+  rospy
+  std_msgs
+  message_generation
+)
+```
+
+2. Habilite a geração do serviço:
+
+```cmake
+add_service_files(
+  FILES
+  CalcService.srv
+)
+```
+
+3. Adicione a linha para gerar mensagens e serviços:
+
+```cmake
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
+```
+
+4. Certifique-se de que o `catkin_package()` contenha `message_runtime`:
+
+```cmake
+catkin_package(
+  CATKIN_DEPENDS message_runtime rospy std_msgs
+)
+```
+
+### 5. Modifique o `package.xml`
+
+No arquivo `package.xml`, adicione as dependências:
+
+```xml
+<build_depend>message_generation</build_depend>
+<exec_depend>message_runtime</exec_depend>
+```
