@@ -1,0 +1,6 @@
+float64 operand1
+float64 operand2
+string operation
+---
+float64 result
+string status

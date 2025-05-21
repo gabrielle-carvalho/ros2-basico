@@ -1,0 +1,4 @@
+[console_scripts]
+basic_calculator = my_py_pkg.basic_calculator:main
+terminal_node = my_py_pkg.terminal_node:main
+

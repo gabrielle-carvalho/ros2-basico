@@ -1,0 +1,22 @@
+[1.537s] Invoking command in '/home/gabi/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/gabi/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gabi/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/gabi/ros2_ws/build/my_py_pkg/build install --record /home/gabi/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
+[2.166s] running egg_info
+[2.167s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[2.327s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[2.328s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[2.372s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[2.373s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[2.381s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[2.383s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[2.440s] running build
+[2.440s] running build_py
+[2.441s] running install
+[2.444s] running install_lib
+[2.448s] running install_data
+[2.449s] running install_egg_info
+[2.457s] removing '/home/gabi/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[2.458s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/gabi/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[2.462s] running install_scripts
+[2.509s] Installing basic_calculator script to /home/gabi/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.639s] Installing terminal_node script to /home/gabi/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.685s] writing list of installed files to '/home/gabi/ros2_ws/build/my_py_pkg/install.log'
+[2.802s] Invoked command in '/home/gabi/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/gabi/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gabi/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/gabi/ros2_ws/build/my_py_pkg/build install --record /home/gabi/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
