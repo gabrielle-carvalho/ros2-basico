@@ -13,7 +13,7 @@ class CalculatorClientNode(Node):
     def call_calculator_server(self, a,b):
         client=self.create_client(AddTwoInts, "add_two_ints")
         while not client.wait_for_service(1.0):
-            self.get_logger().warn("Estou aguardando o serviço")
+            self.get_logger().warn("Estou aguardando o serviço.")
         self.get_logger().info("Opa! Ligaram a calculadora")
 
         request=AddTwoInts.Request()
